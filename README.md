@@ -1,5 +1,5 @@
 # Predicting Mental Health-Related Dispositions and Sentences From Cook County Court Data
-*Kelsey Markey, Alene Rhea, Angela Teng, Karmen Hutchinson*
+Kelsey Markey, Alene Rhea, Angela Teng, Karmen Hutchinson
 
 *New York University Center for Data Science, Fall 2019*
 
