@@ -67,7 +67,8 @@ def downsample(df, pct_MHI1):
   num_MHI0 = count_MHI1 * int(round((100-pct_MHI1)/pct_MHI1))
 
   #sample from negative cases
-  MHI0_sample = MHI0.sample(n=num_MHI0, random_state=42)
+  MHI0_sample = MHI0.sample(n=num_MHI0)
+  #MHI0_sample = MHI0.sample(n=num_MHI0, random_state=42)
 
   #append sampled negative cases to all positive cases
   downsampled_df = MHI1.append(MHI0_sample)
