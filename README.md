@@ -23,4 +23,11 @@ Abstract: People living with mental illness are especially likely to have encoun
 
 <b>To Do/In Progress:</b>
 - Add tree modeling notebook
+- Fill NA's in ['weekday', 'latitude', 'longitude'] in Data Prep Notebook
 - Move the imputation step to after the train/test/split
+- Follow up paper explaining 2020 edits (reproducibility; specific AOIC in feature importance; moving imputation step; etc.)
+
+<b>Outstanding Issues:</b>
+- Bias
+- No cross-validation, not checking for variance; should implement walk forward
+- Imputation (models to impute age and lat/lon)
