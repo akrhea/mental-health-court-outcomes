@@ -73,8 +73,4 @@ def downsample(df, pct_MHI1):
   downsampled_df = MHI1.append(MHI0_sample)
 
   return downsampled_df
-
-
-# PCA 
   
-# Scaler 
