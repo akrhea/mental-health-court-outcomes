@@ -4,6 +4,7 @@
 Created on Sat Jan 25 16:08:54 2020
 
 @author: kelseymarkey
+edited by akrhea
 """
 
 '''
@@ -14,14 +15,17 @@ of bias because training set will have higher proportion of "finalized" rows.
 '''   
  
 def get_train_val_test (df, train_size, test_size, val_size): 
-  #takes in df (assumes target variable = 'MHI') and 
-  #train, test, and val sizes (fractions of 1)
-  #returns xtrain, xval, xtest, ytrain, yval, ytest
 
+    #used for getting train/test split for training final model
+    #no validation set
+
+    #uses "timeline" method
+
+    #takes in df (assumes target variable = 'MHI') and 
+    #train, test, and val sizes (fractions of 1)
+    #returns xtrain, xval, xtest, ytrain, yval, ytest
     #check that specificed sizes sum to 1
-    if train_size + test_size + val_size != 1:
-      print('error: train_size + test_size + val_size must sum to 1')
-      return 
+    assert train_size + test_size == 1, 'train_size + test_size + val_size must sum to 1'
 
     #sort ascending by received date
     sorted_df = df.sort_values(axis = 0, by=['received_date'])
@@ -47,6 +51,36 @@ def get_train_val_test (df, train_size, test_size, val_size):
 
     return xtrain, xval, xtest, ytrain, yval, ytest
 
+
+def get_train_test (df, train_size, test_size): 
+    #used for getting train/test split for training final model
+    #no validation set
+
+    #uses "timeline" method
+
+    #takes in df (assumes 'MHI' is target variable)
+    #takes in train and test sizes (fractions of 1)
+    #returns training df and test df
+
+    #check that specificed sizes sum to 1
+    assert train_size + test_size == 1, 'train_size + test_size must sum to 1'
+        
+    #sort ascending by received date
+    sorted_df = df.sort_values(by=['received_date'])
+    sorted_df = sorted_df.drop('received_date', axis=1)
+
+    total_size = len(sorted_df)
+
+    #first train_size % indices in train
+    train = sorted_df.iloc[:int(round(train_size*total_size))]
+
+    #final test_size % indices in test
+    test = sorted_df.iloc[int(round(train_size*total_size)):-1]
+
+    return train, test
+
+
+
 '''
 Downsampling the training set
 '''
@@ -67,7 +101,7 @@ def downsample(df, pct_MHI1):
   num_MHI0 = count_MHI1 * int(round((100-pct_MHI1)/pct_MHI1))
 
   #sample from negative cases
-  MHI0_sample = MHI0.sample(n=num_MHI0, random_state=2020)
+  MHI0_sample = MHI0.sample(n=num_MHI0, random_state=42)
 
   #append sampled negative cases to all positive cases
   downsampled_df = MHI1.append(MHI0_sample)
