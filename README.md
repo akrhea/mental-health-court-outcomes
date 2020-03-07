@@ -19,7 +19,8 @@ Abstract: People living with mental illness are especially likely to have encoun
 1) MHI_building.ipynb
 2) Data_Prep.ipynb
 3) Data Analysis.ipynb
-4) Modeling notebook
+4) Modeling Notebook.ipynb
+5) Final_Gradient_Boosting_Model.ipynb
 
 <b>To Do/In Progress:</b>
 - Add tree modeling notebook
