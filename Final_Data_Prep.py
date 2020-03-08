@@ -25,7 +25,7 @@ def get_train_val_test (df, train_size, test_size, val_size):
     #train, test, and val sizes (fractions of 1)
     #returns xtrain, xval, xtest, ytrain, yval, ytest
     #check that specificed sizes sum to 1
-    assert train_size + test_size == 1, 'train_size + test_size + val_size must sum to 1'
+    assert train_size + test_size + val_size == 1, 'train_size + test_size + val_size must sum to 1'
 
     #sort ascending by received date
     sorted_df = df.sort_values(axis = 0, by=['received_date'])
