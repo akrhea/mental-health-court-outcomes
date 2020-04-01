@@ -15,6 +15,8 @@ Abstract: People living with mental illness are especially likely to have encoun
 - FINAL PAPER.pdf- Final project writeup, submitted 12/2019
 - total_df.pckl.gz- Intermediate dataset read into modeling notebooks
 
+Original Initiation, Sentencing, and Disposition datasets can also be downloaded from [this Google Drive folder](https://drive.google.com/drive/folders/1gL_7NqyI4gx68XVRWVSeLc-LVTdICb0-?usp=sharing)
+
 <b>If you want to recreate this project you should run the notebooks in this order:</b>
 1) MHI_building.ipynb
 2) Data_Prep.ipynb
