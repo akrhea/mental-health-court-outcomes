@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+import pandas as pd
+
 """
 Created on Sat Jan 25 16:08:54 2020
 
@@ -7,17 +10,35 @@ Created on Sat Jan 25 16:08:54 2020
 edited by akrhea
 """
 
-'''
-Split Data into Train / Validate / Test Sets
-Returns a static validation set with divisions based on timeline to reduce 
-leakage and ensure that we only ever predict forward in time. Potential danger 
-of bias because training set will have higher proportion of "finalized" rows.
-'''   
- 
-def get_train_val_test (df, train_size, test_size, val_size): 
+def remove_final_dummy(df):
+    '''
+    Remove final dummy variable of each categorical feature.
+    Changes df in-place.
 
-    #used for getting train/test split for training final model
-    #no validation set
+    Assumes df has been 'exploded' by one-hot encoding.
+    '''
+
+    #read in pre-exploded non-OHE df, with data still in categorical format
+    cat_df = pd.read_pickle('init_clean.pckl.gz', compression = 'gzip')
+
+    #list of all categorical columns to get dummies for
+    #excluding ID numbers, numerical features, datetime features, binary features
+    cat_cols = ['offense_category', 'charge_offense_title', 'chapter', 'act', 
+                'section', 'class', 'aoic', 'event', 'gender', 'race', 
+                'law_enforcement_agency', 'unit', 'incident_city', 'updated_offense_category']
+    for col in cat_cols:
+        final_value = col+"_"+cat_df[col].unique()[-1]
+        df.drop(columns=final_value, inplace=True)
+    return
+ 
+
+def get_train_val_test (df, train_size, test_size, val_size): 
+    '''
+    Split Data into Train / Validate / Test Sets
+    Returns a static validation set with divisions based on timeline to reduce 
+    leakage and ensure that we only ever predict forward in time. Potential danger 
+    of bias because training set will have higher proportion of "finalized" rows.
+    '''   
 
     #uses "timeline" method
 
@@ -107,4 +128,3 @@ def downsample(df, pct_MHI1):
   downsampled_df = MHI1.append(MHI0_sample)
 
   return downsampled_df
-  
