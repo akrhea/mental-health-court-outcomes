@@ -13,7 +13,8 @@ Abstract: People living with mental illness are especially likely to have encoun
 - Dispositions.csv- original Disposition dataset downloaded from Cook County
 - Initiation.csv- original Initation dataset downloaded from Cook County
 - FINAL PAPER.pdf- Final project writeup, submitted 12/2019
-- total_df.pckl.gz- Intermediate dataset read into modeling notebooks
+- total_df.pckl.gz- Intermediate dataset read into modeling notebooks, categorical features one-hot encoded
+- init_clean.pckl.gz- Intermediate dataset read into modeling notebooks, categorical features not one-hot encoded
 
 Original Initiation, Sentencing, and Disposition datasets can also be downloaded from [this Google Drive folder](https://drive.google.com/drive/folders/1gL_7NqyI4gx68XVRWVSeLc-LVTdICb0-?usp=sharing)
 
