@@ -34,17 +34,16 @@ def remove_final_dummy(df):
 
 def get_train_val_test (df, train_size, test_size, val_size): 
     '''
-    Split Data into Train / Validate / Test Sets
+    Uses "timeline" method to split Data into Train / Validate / Test Sets
     Returns a static validation set with divisions based on timeline to reduce 
     leakage and ensure that we only ever predict forward in time. Potential danger 
     of bias because training set will have higher proportion of "finalized" rows.
-    '''   
 
-    #uses "timeline" method
+    Takes in df (assumes target variable = 'MHI') and train, test, and val sizes (fractions of 1)
+    Returns xtrain, xval, xtest, ytrain, yval, ytest, with received_date dropped.
+    '''
 
-    #takes in df (assumes target variable = 'MHI') and 
-    #train, test, and val sizes (fractions of 1)
-    #returns xtrain, xval, xtest, ytrain, yval, ytest
+
     #check that specificed sizes sum to 1
     assert train_size + test_size + val_size == 1, 'train_size + test_size + val_size must sum to 1'
 
@@ -74,20 +73,22 @@ def get_train_val_test (df, train_size, test_size, val_size):
 
 
 def get_train_test (df, train_size, test_size): 
-    #used for getting train/test split for training final model
-    #no validation set
+    '''
+    Used for getting train/test split for training final model.
+    No validation set.
 
-    #uses "timeline" method
+    Uses "timeline" method
 
-    #takes in df (assumes 'MHI' is target variable)
-    #takes in train and test sizes (fractions of 1)
-    #returns training df and test df
+    Takes in df (assumes 'MHI' is target variable).
+    Takes in train and test sizes (fractions of 1).
+    Returns training df and test df, with received_date dropped.
+    '''
 
     #check that specificed sizes sum to 1
     assert train_size + test_size == 1, 'train_size + test_size must sum to 1'
         
     #sort ascending by received date
-    sorted_df = df.sort_values(by=['received_date'])
+    sorted_df = df.sort_values(by=['received_date'], inplace=False)
     sorted_df = sorted_df.drop('received_date', axis=1)
 
     total_size = len(sorted_df)
