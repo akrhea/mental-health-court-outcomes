@@ -28,7 +28,8 @@ def remove_final_dummy(df):
                 'law_enforcement_agency', 'unit', 'incident_city', 'updated_offense_category']
     for col in cat_cols:
         final_value = col+"_"+cat_df[col].unique()[-1]
-        df.drop(columns=final_value, inplace=True)
+        if final_value in df.columns:
+            df.drop(columns=final_value, inplace=True)
     return
  
 
