@@ -37088,25 +37088,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divDCXJDOKZ55WJ1V0"></div>
+        <div class="lime top_div" id="top_divI80GF1ZG2VRL67C"></div>
         
         <script>
-        var top_div = d3.select('#top_divDCXJDOKZ55WJ1V0').classed('lime top_div', true);
+        var top_div = d3.select('#top_divI80GF1ZG2VRL67C').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["No MHI", "Positive MHI"], [0.8431767234451252, 0.15682327655487482]);
+            var pp = new lime.PredictProba(pp_svg, ["No MHI", "Positive MHI"], [0.633647601484007, 0.366352398515993]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["No MHI", "Positive MHI"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["gender=male", -0.22187798266500494], ["chapter_625 <= 0.00", 0.12292160622179718], ["charge_offense_title_aggravated battery <= 0.00", -0.119905550381917], ["act_5 <= 0.00", -0.09529566607113187], ["updated_offense_category=narcotics", -0.08502428195062255]], 1, exp_div);
+                exp.show([["gender=male", -0.2358317468477343], ["chapter_625 <= 0.00", 0.13553065540870368], ["charge_offense_title_aggravated battery <= 0.00", -0.12945723565123723], ["act_5 <= 0.00", -0.10272257969123036], ["updated_offense_category=narcotics", -0.0891584847318931]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["gender=male", "True", -0.22187798266500494], ["chapter_625", "0.00", 0.12292160622179718], ["charge_offense_title_aggravated battery", "0.00", -0.119905550381917], ["act_5", "0.00", -0.09529566607113187], ["updated_offense_category=narcotics", "True", -0.08502428195062255]], 1, raw_div);
+            exp.show_raw_tabular([["gender=male", "True", -0.2358317468477343], ["chapter_625", "0.00", 0.13553065540870368], ["charge_offense_title_aggravated battery", "0.00", -0.12945723565123723], ["act_5", "0.00", -0.10272257969123036], ["updated_offense_category=narcotics", "True", -0.0891584847318931]], 1, raw_div);
         
         </script>
         </body></html>

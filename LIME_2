@@ -37088,25 +37088,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divPVEK5PVR6CKFXZQ"></div>
+        <div class="lime top_div" id="top_divBCP25IDRYPIYFPU"></div>
         
         <script>
-        var top_div = d3.select('#top_divPVEK5PVR6CKFXZQ').classed('lime top_div', true);
+        var top_div = d3.select('#top_divBCP25IDRYPIYFPU').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["No MHI", "Positive MHI"], [0.633647601484007, 0.366352398515993]);
+            var pp = new lime.PredictProba(pp_svg, ["No MHI", "Positive MHI"], [0.20794383623028034, 0.7920561637697197]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["No MHI", "Positive MHI"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["gender=male", -0.22553354460781538], ["charge_offense_title_aggravated battery <= 0.00", -0.1269544775411244], ["updated_offense_category=narcotics", -0.091264751049847], ["act_5 <= 0.00", -0.09046666435532505], ["race=white", 0.08680778170353563]], 1, exp_div);
+                exp.show([["gender=female", 0.23509477713325277], ["charge_offense_title_aggravated battery <= 0.00", -0.1421249866176049], ["chapter_625 <= 0.00", 0.13785871346720358], ["class_x <= 0.00", 0.11912754049613516], ["latitude <= 41.88", -0.08710752528394834]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["gender=male", "True", -0.22553354460781538], ["charge_offense_title_aggravated battery", "0.00", -0.1269544775411244], ["updated_offense_category=narcotics", "True", -0.091264751049847], ["act_5", "0.00", -0.09046666435532505], ["race=white", "True", 0.08680778170353563]], 1, raw_div);
+            exp.show_raw_tabular([["gender=female", "True", 0.23509477713325277], ["charge_offense_title_aggravated battery", "0.00", -0.1421249866176049], ["chapter_625", "0.00", 0.13785871346720358], ["class_x", "0.00", 0.11912754049613516], ["latitude", "41.88", -0.08710752528394834]], 1, raw_div);
         
         </script>
         </body></html>

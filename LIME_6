@@ -37088,10 +37088,10 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divGENJUUAUPAWOSAU"></div>
+        <div class="lime top_div" id="top_div7GGJTRX58Z55W0S"></div>
         
         <script>
-        var top_div = d3.select('#top_divGENJUUAUPAWOSAU').classed('lime top_div', true);
+        var top_div = d3.select('#top_div7GGJTRX58Z55W0S').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
@@ -37103,10 +37103,10 @@
             var exp = new lime.Explanation(["No MHI", "Positive MHI"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["gender=male", -0.22448107708633], ["charge_offense_title_aggravated battery <= 0.00", -0.130843742730548], ["chapter_625 <= 0.00", 0.12319847445732579], ["latitude > 41.88", 0.09831108415049689], ["race=white", 0.08743989311787642]], 1, exp_div);
+                exp.show([["gender=male", -0.2189221921230188], ["chapter_625 <= 0.00", 0.1352871452932404], ["charge_offense_title_aggravated battery <= 0.00", -0.1301394583183081], ["race=white", 0.09283166287712963], ["latitude > 41.88", 0.09168100435290616]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["gender=male", "True", -0.22448107708633], ["charge_offense_title_aggravated battery", "0.00", -0.130843742730548], ["chapter_625", "0.00", 0.12319847445732579], ["latitude", "42.01", 0.09831108415049689], ["race=white", "True", 0.08743989311787642]], 1, raw_div);
+            exp.show_raw_tabular([["gender=male", "True", -0.2189221921230188], ["chapter_625", "0.00", 0.1352871452932404], ["charge_offense_title_aggravated battery", "0.00", -0.1301394583183081], ["race=white", "True", 0.09283166287712963], ["latitude", "42.01", 0.09168100435290616]], 1, raw_div);
         
         </script>
         </body></html>
