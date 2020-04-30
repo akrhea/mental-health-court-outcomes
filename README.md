@@ -29,6 +29,7 @@ Original Initiation, Sentencing, and Disposition datasets can also be downloaded
 - Add tree modeling notebook
 - Fill NA's in ['weekday', 'latitude', 'longitude'] in Data Prep Notebook
 - Move the imputation step to after the train/test/split
+- Move data into data folder and fix paths
 - Follow up paper explaining 2020 edits (reproducibility; specific AOIC in feature importance; moving imputation step; etc.)
 
 <b>Outstanding Issues:</b>
