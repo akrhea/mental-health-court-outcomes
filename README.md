@@ -1,12 +1,12 @@
 # Predicting Mental Health-Related Dispositions and Sentences From Cook County Court Data
 
-#### Classifier developed by Kelsey Markey, Alene Rhea, Angela Teng, and Karmen Hutchinson<br/>New York University Center for Data Science, Fall 2019
+
+### Classifier developed by Kelsey Markey, Alene Rhea, Angela Teng, and Karmen Hutchinson<br/>New York University Center for Data Science, Fall 2019
 Abstract: People living with mental illness are especially likely to have encounters with the law; they need dedicated resources and thoughtful treatment as they make their way through the criminal justice system. This project aims to predict mental health-related dispositions and sentences from a set of judicial and case-based features available only at initiation. Early detection of people who are likely to be suffering from mental illnesses will enable governments and other institutions to provide appropriate support to these people as early as possible. The project underscores the need for disparate impact tracking in such systems.
 
-#### January 2020 Improvements performed by Kelsey Markey and Alene Rhea
-The project was moved to its current home on GitHub, and the data cleaning and model tuning notebooks were adapted to ensure reproducibility.
 
-#### Interpretability Study completed by Kelsey Markey and Alene Rhea<br/>New York University, Responsible Data Science, Spring 2020
+
+### Interpretability Study completed by Kelsey Markey and Alene Rhea<br/>New York University, Responsible Data Science, Spring 2020
 Rhea and Markey produced a "Nutritional Label" inspired by “Nutritional labels for data and models”, Stoyanovich and Howe, IEEE Data Engineering Bulletin Special Issue on Fairness, Diversity, and Transparency in Data Systems 42(3), 2019, http://sites.computer.org/debull/A19sept/p13.pdf. The report analyzes the automated decision system's data, methodology, and outcomes, and ultimately concludes that the system is not appropriate for deployment.
 
 
