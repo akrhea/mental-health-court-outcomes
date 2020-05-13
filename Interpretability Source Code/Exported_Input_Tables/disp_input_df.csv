@@ -1,0 +1,32 @@
+,Datatype,Missing Values,Cardinality,Percent Unique,Value Information
+case_id,int64,0.00%,291211,35.44%,Min: 44670309710 Max: 131204831926 Mean: 118248119178.22 Median: 120743826997.0
+case_participant_id,int64,0.00%,312616,38.04%,Min: 119351839773 Max: 1101125805568 Mean: 931427673582.10 Median: 963852493046.0
+offense_category,object,0.00%,88,0.01%,Top category: Narcotics (21.71%) Second category: UUW - Unlawful Use of Weapon (17.45%)
+primary_charge,bool,0.00%,2,0.00%,True: 37.06% False: 62.94%
+charge_id,int64,0.00%,779723,94.89%,Min: 297139349681 Max: 2584959433735 Mean: 2169103573981.33 Median: 2224683665648.0
+charge_version_id,int64,0.00%,784137,95.43%,Min: 67262144626 Max: 589634049667 Mean: 494267139172.79 Median: 506686326004.0
+disposition_charged_offense_title,object,0.00%,2302,0.28%,Top category: POSSESSION OF A CONTROLLED SUBSTANCE (12.81%) Second category: AGGRAVATED UNLAWFUL USE OF WEAPON (12.03%)
+disposition_charged_chapter,object,0.00%,858,0.10%,Top category: 720 (81.85%) Second category: 625 (13.53%)
+disposition_charged_act,object,2.84%,52,0.01%,Top category: 5 (75.24%) Second category: 570 (20.11%)
+disposition_charged_section,object,2.84%,1635,0.20%,Top category: 402(c) (12.88%) Second category: 24-1.6(a)(1) (9.04%)
+disposition_charged_class,object,0.02%,14,0.00%,Top category: 4 (41.56%) Second category: 2 (21.24%)
+disposition_charged_aoic,object,0.02%,3298,0.40%,Top category: 5101110 (12.61%) Second category: 0012476 (2.74%)
+disposition_date,object,0.00%,2802,0.34%,Top category: 10/30/2013 12:00:00 AM (0.10%) Second category: 5/11/2012 12:00:00 AM (0.09%)
+charge_disposition,object,0.00%,36,0.00%,Top category: Nolle Prosecution (61.21%) Second category: Plea Of Guilty (24.75%)
+charge_disposition_reason,object,73.31%,30,0.01%,Top category: PG to Other Count/s (58.32%) Second category: Proceeding on Other Count/s (15.12%)
+judge,object,8.47%,403,0.05%,Top category: Brian K Flaherty (2.96%) Second category: James B Linn (2.62%)
+court_name,object,0.68%,9,0.00%,Top category: District 1 - Chicago (60.77%) Second category: District 6 - Markham (9.78%)
+court_facility,object,1.03%,17,0.00%,Top category: 26TH Street (54.13%) Second category: Markham Courthouse (9.74%)
+age_at_incident,float64,1.62%,88,0.01%,Min: 17.0 Max: 156.0 Mean: 31.91 Median: nan
+gender,object,0.36%,6,0.00%,Top category: Male (89.34%) Second category: Female (10.65%)
+race,object,0.51%,12,0.00%,Top category: Black (66.94%) Second category: White [Hispanic or Latino] (16.17%)
+incident_begin_date,object,0.93%,6465,0.79%,Top category: 1/1/2012 12:00:00 AM (0.10%) Second category: 1/1/2013 12:00:00 AM (0.09%)
+incident_end_date,object,88.74%,4287,4.63%,Top category: 2/28/2013 12:00:00 AM (0.48%) Second category: 1/19/2017 12:00:00 AM (0.44%)
+arrest_date,object,2.18%,258283,32.13%,Top category: 3/10/2012 1:49:00 AM (0.04%) Second category: 4/14/2010 5:51:00 AM (0.04%)
+law_enforcement_agency,object,0.13%,525,0.06%,Top category: CHICAGO PD (64.30%) Second category: COOK COUNTY SHERIFF (IL0160000) (2.41%)
+unit,object,69.57%,101,0.04%,Top category: District 11 - Harrison (19.23%) Second category: District 10 - Ogden (8.09%)
+incident_city,object,8.97%,268,0.04%,Top category: Chicago (71.58%) Second category: Cicero (1.43%)
+received_date,object,0.00%,6033,0.73%,Top category: 10/18/2011 12:00:00 AM (0.11%) Second category: 8/23/2011 12:00:00 AM (0.09%)
+arraignment_date,object,17.21%,3206,0.47%,Top category: 2/14/2012 12:00:00 AM (0.14%) Second category: 12/6/2011 12:00:00 AM (0.14%)
+updated_offense_category,object,0.00%,81,0.01%,Top category: Narcotics (22.97%) Second category: UUW - Unlawful Use of Weapon (18.13%)
+charge_count,int64,0.00%,301,0.04%,Min: 1 Max: 301 Mean: 5.61 Median: 2.0

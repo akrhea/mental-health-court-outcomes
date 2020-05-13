@@ -1,0 +1,40 @@
+,Datatype,Missing Values,Cardinality,Percent Unique,Value Information
+case_id,int64,0.00%,187239,79.30%,Min: 44670309710 Max: 131109649851 Mean: 118601335359.31 Median: 120456003062.5
+case_participant_id,int64,0.00%,201181,85.20%,Min: 120603216768 Max: 1099816034107 Mean: 936348898675.14 Median: 960035394534.0
+offense_category,object,0.00%,88,0.04%,Top category: Narcotics (26.99%) Second category: UUW - Unlawful Use of Weapon (10.26%)
+primary_charge,bool,0.00%,2,0.00%,True: 71.31% False: 28.69%
+charge_id,int64,0.00%,217597,92.15%,Min: 297139349681 Max: 2584959433735 Mean: 2175371551990.98 Median: 2214671265030.0
+charge_version_id,int64,0.00%,220786,93.50%,Min: 67452722415 Max: 589634049667 Mean: 498445626667.83 Median: 505768243186.0
+disposition_charged_offense_title,object,0.00%,1624,0.69%,Top category: POSSESSION OF A CONTROLLED SUBSTANCE (15.42%) Second category: AGGRAVATED DRIVING UNDER THE INFLUENCE OF ALCOHOL (6.34%)
+disposition_charged_chapter,object,0.00%,484,0.20%,Top category: 720 (80.14%) Second category: 625 (14.77%)
+disposition_charged_act,object,2.27%,46,0.02%,Top category: 5 (69.58%) Second category: 570 (24.10%)
+disposition_charged_section,object,2.27%,1332,0.58%,Top category: 402(c) (15.22%) Second category: 11-501(a) (6.52%)
+disposition_charged_class,object,0.01%,14,0.01%,Top category: 4 (40.75%) Second category: 2 (20.55%)
+disposition_charged_aoic,object,0.01%,2376,1.01%,Top category: 5101110 (15.19%) Second category: 1110000 (3.87%)
+disposition_date,object,0.00%,2504,1.06%,Top category: 10/30/2013 12:00:00 AM (0.10%) Second category: 7/18/2012 12:00:00 AM (0.10%)
+charge_disposition,object,0.00%,28,0.01%,Top category: Plea Of Guilty (88.41%) Second category: Finding Guilty (8.96%)
+charge_disposition_reason,object,99.66%,15,1.85%,Top category: Drug Court Graduate (47.97%) Second category: PG to Other Count/s (18.33%)
+sentence_phase,object,0.00%,6,0.00%,Top category: Original Sentencing (95.60%) Second category: Probation Violation Sentencing (2.81%)
+sentence_date,object,0.00%,2907,1.23%,Top category: 12/14/2011 12:00:00 AM (0.10%) Second category: 10/30/2013 12:00:00 AM (0.10%)
+sentence_judge,object,0.31%,325,0.14%,Top category: James B Linn (2.62%) Second category: Nicholas R Ford (2.27%)
+sentence_type,object,0.00%,14,0.01%,Top category: Prison (53.63%) Second category: Probation (38.04%)
+current_sentence,bool,0.00%,2,0.00%,True: 96.16% False: 3.84%
+commitment_type,object,0.67%,29,0.01%,Top category: Illinois Department of Corrections (54.74%) Second category: Probation (31.83%)
+commitment_term,object,0.68%,463,0.20%,Top category: 2 (27.99%) Second category: 1 (14.30%)
+commitment_unit,object,0.68%,12,0.01%,Top category: Year(s) (72.65%) Second category: Months (23.25%)
+court_name,object,0.59%,8,0.00%,Top category: District 1 - Chicago (56.56%) Second category: District 2 - Skokie (11.32%)
+court_facility,object,0.79%,16,0.01%,Top category: 26TH Street (55.77%) Second category: Skokie Courthouse (11.23%)
+length_of_case_in_days,float64,7.95%,2590,1.19%,Min: -328549.0 Max: 329379.0 Mean: 308.34 Median: nan
+age_at_incident,float64,1.29%,76,0.03%,Min: 17.0 Max: 130.0 Mean: 32.33 Median: nan
+gender,object,0.33%,6,0.00%,Top category: Male (87.96%) Second category: Female (12.04%)
+race,object,0.52%,11,0.00%,Top category: Black (66.72%) Second category: White [Hispanic or Latino] (15.20%)
+incident_begin_date,object,0.97%,5626,2.41%,Top category: 4/14/2011 12:00:00 AM (0.08%) Second category: 8/10/2013 12:00:00 AM (0.07%)
+incident_end_date,object,90.74%,3945,18.05%,Top category: 7/7/2004 12:00:00 AM (0.57%) Second category: 8/22/2011 12:00:00 AM (0.27%)
+arrest_date,object,2.07%,171677,74.24%,Top category: 7/20/2004 10:00:00 PM (0.04%) Second category: 5/1/2007 12:00:00 PM (0.04%)
+law_enforcement_agency,object,0.11%,499,0.21%,Top category: CHICAGO PD (62.81%) Second category: COOK COUNTY SHERIFF (IL0160000) (2.94%)
+unit,object,67.98%,97,0.13%,Top category: District 11 - Harrison (24.72%) Second category: District 10 - Ogden (8.21%)
+incident_city,object,7.87%,247,0.11%,Top category: Chicago (69.28%) Second category: Cicero (1.69%)
+received_date,object,0.00%,5214,2.21%,Top category: 8/28/2012 12:00:00 AM (0.09%) Second category: 2/21/2013 12:00:00 AM (0.08%)
+arraignment_date,object,7.95%,3053,1.40%,Top category: 9/3/2013 12:00:00 AM (0.12%) Second category: 11/12/2013 12:00:00 AM (0.12%)
+updated_offense_category,object,0.00%,81,0.03%,Top category: Narcotics (28.39%) Second category: UUW - Unlawful Use of Weapon (10.45%)
+charge_count,int64,0.00%,126,0.05%,Min: 1 Max: 297 Mean: 2.14 Median: 1.0
