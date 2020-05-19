@@ -7,7 +7,7 @@ Abstract: People living with mental illness are especially likely to have encoun
 
 
 ### Interpretability Study<br/>Kelsey Markey and Alene Rhea<br/>New York University, Responsible Data Science, Spring 2020
-This phase of the project analyzes the automated decision system's data, methodology, and outcomes. The report ultimately concludes that the system is not appropriate for deployment. "Nutritional Label" inspired by Stoyanovich and Howe's [“Nutritional labels for data and models.”](http://sites.computer.org/debull/A19sept/p13.pdf) 
+This phase of the project analyzes the automated decision system's data, methodology, and outcomes. The report concludes that the system is not appropriate for deployment. "Nutritional Label" inspired by Stoyanovich and Howe's [“Nutritional labels for data and models.”](http://sites.computer.org/debull/A19sept/p13.pdf) 
 
 
 
