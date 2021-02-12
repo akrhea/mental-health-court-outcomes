@@ -6,5 +6,5 @@ People living with mental illness are especially likely to have encounters with 
 
 
 
-## Interpretability Study<br/><sub>Kelsey Markey and Alene Rhea<br/>New York University, Responsible Data Science<br/>Spring 2020</sub>
+## AI System Audit<br/><sub>Kelsey Markey and Alene Rhea<br/>New York University, Responsible Data Science<br/>Spring 2020</sub>
 "Nutritional Label" inspired by Stoyanovich and Howe's [“Nutritional labels for data and models.”](http://sites.computer.org/debull/A19sept/p13.pdf) This phase of the project analyzes the automated decision system's data, methodology, and outcomes. The report concludes that the system is not appropriate for deployment.
